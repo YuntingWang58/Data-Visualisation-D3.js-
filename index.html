@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<h1 class="ui-title" style="margin-left: 60px;">The number of students at each University in the UK between 2015 to 2016</h1>
+		<h2 style="margin-left: 60px;">Created by YunTing Wang / Data resource from HE providers</h2>
+	</head>
+	<body>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>	
+	<!-- Create a div where the graph will take place -->
+	<!-- Add 2 buttons -->
+	<div style="margin-left: 60px;">Click a button below to switch the Gender or Ethnicity information of universites in the UK:</div>
+	<button  style="margin-left: 60px; margin-bottom: 20px" onclick="update('my_dataviz_gender', 'my_dataviz_ethnicity')">Gender</button>
+	<button style="margin-left: 10px; margin-bottom: 20px" onclick="update('my_dataviz_ethnicity', 'my_dataviz_gender')">Ethnicity</button>
+	<div id="my_dataviz_gender" style="overflow: scroll;">
+		<div style="margin-left: 60px;">Select an University Region in the UK: (you can move mouse cursor to see detailed number of gender in each university.)</div>
+		<div class='uk_region_ddl_gender' style="margin-left: 60px;"></div>
+	</div>
+	<div id="my_dataviz_ethnicity" style="overflow: scroll;display: none;">
+		<div style="margin-left: 60px;">Select an University Region in the UK: (Move your mouse cursor to see detailed number of ethnicity in each university.)</div>
+		<div class='uk_region_ddl_ethnicity' style="margin-left: 60px;"></div>
+	</div>
+</html>
