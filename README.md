@@ -1,6 +1,6 @@
 # Data-Visulisation-D3.js-
 
-# Gudience
+# Guidance
 
 How to run and see my data visualisation website?
 
